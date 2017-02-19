@@ -1,7 +1,7 @@
 {
-  "name": "Beautifully generated documentation + restclients for Express+Expressa using swagger + markdown",
-  "version": "1.0.0",
-  "description": "description here",
+  "name": "expressa-swagger",
+  "version": "1.0.1",
+  "description": "Beautifully generated documentation for Expressa using swagger + markdown",
   "main": "index.js",
   "directories": {
     "test": "set -ex; for test in test/tests/*; do $test; done"

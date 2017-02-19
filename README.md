@@ -2,9 +2,17 @@ Beautifully generated documentation + restclients for Express+Expressa using swa
 
 ![](https://github.com/coderofsalvation/expressa-swagger/raw/master/expressa.png)
 
+## Features
+
+* generates online documentation at `/api/doc`
+* generates swagger json at `/api/swagger`
+* generates swagger client at `/api/client`
+
 ## Usage
 
-Add this snippet to your expressa application:
+    npm install expressa-swagger --save
+
+Then add this snippet to your expressa application:
 
     var expressaSwagger = require('expressa-swagger')
     expressaSwagger({
@@ -18,7 +26,7 @@ Add this snippet to your expressa application:
       basepath: '/api', 
       schemes: ["http"], 
       onDocumentation: function(swagger, req, res, next){
-        // hide/modify swagger data here, or add auth middleware 
+        // optionally hide/modify swagger data here, or add auth middleware 
         // before serving it to the documentation generator at /api/doc
       }
     })
@@ -41,12 +49,6 @@ a simple JavaScript REST client, by putting this into your frontend-code:
         // });
       }
     </script>
-
-## Features
-
-* generates online documentation at `/api/doc`
-* generates swagger json at `/api/swagger`
-* generates swagger client at `/api/client`
 
 ## Todo 
 
