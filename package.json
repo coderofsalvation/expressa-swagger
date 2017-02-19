@@ -1,0 +1,26 @@
+{
+  "name": "Beautifully generated documentation + restclients for Express+Expressa using swagger + markdown",
+  "version": "1.0.0",
+  "description": "description here",
+  "main": "index.js",
+  "directories": {
+    "test": "set -ex; for test in test/tests/*; do $test; done"
+  },
+  "scripts": {
+    "test": "set -ex; for test in test/tests/*; do $test; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderofsalvation/expressa-swagger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderofsalvation/expressa-swagger/issues"
+  },
+  "homepage": "https://github.com/coderofsalvation/expressa-swagger#readme",
+  "dependencies": {
+    "swagger-ui": "^2.2.8"
+  }
+}
