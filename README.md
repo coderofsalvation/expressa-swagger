@@ -6,7 +6,6 @@ Beautifully generated documentation + restclients for Express+Expressa using swa
 
 * generates online documentation at `/api/doc`
 * generates swagger json at `/api/swagger`
-* generates swagger client at `/api/client`
 
 ## Usage
 
@@ -31,24 +30,9 @@ Then add this snippet to your expressa application:
       }
     })
 
-Eventhough you can generate REST-clients for almost __any__ language using [swagger-codegen](http://swagger.io/swagger-codegen), expressa-swagger serves 
-a simple JavaScript REST client, by putting this into your frontend-code:
+Grab REST-clients for almost __any__ language using [swagger-codegen](http://swagger.io/swagger-codegen).
 
-    <script type="text/javascript" src="/api/client"></script>
-
-    <script type="text/javascript">
-      api.ready = function(){
-        // for apiKey authorization use: api.auth('my-token') 
-        // for basicAuth use: api.auth('username', 'password') 
-        // authorization may be set for any level (api, api.resource, or api.operation) 
-        //
-        // get a user like this:
-        //
-        // api.user.getUserById("2kl3h4lk2jhk42j3h4", function(response){
-        //   console.log(response);
-        // });
-      }
-    </script>
+> NOTE: For the browser & nodejs, the recommended REST-client is [expressa-restclient](https://npmjs.org/package/expressa-restclient]
 
 ## Todo 
 
