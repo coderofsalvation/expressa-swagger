@@ -11,6 +11,8 @@ Beautifully generated documentation + restclients for Express+Expressa using swa
 
     npm install expressa-swagger --save
 
+> NOTE: windows users need to make their own symlinks (see 'postinstall' in package.json)
+
 Then add this snippet to your expressa application:
 
     var expressaSwagger = require('expressa-swagger')

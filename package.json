@@ -1,12 +1,13 @@
 {
   "name": "expressa-swagger",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Beautifully generated documentation for Expressa using swagger + markdown",
   "main": "index.js",
   "directories": {
     "test": "set -ex; for test in test/tests/*; do $test; done"
   },
   "scripts": {
+    "postinstall":"cd public/doc; ln -fs ../../../swagger-ui/dist/lib . && ln -fs ../../../swagger-ui/dist/lang . && ln -fs ../../../swagger-ui/dist/images . && ln -fs ../../../swagger-ui/dist/css . && ln -s ../../../swagger-ui/dist/fonts . && ln -s ../../../swagger-ui/dist/*.js . && ln -s ../../../swagger-ui/dist/o2c.html .",
     "test": "set -ex; for test in test/tests/*; do $test; done"
   },
   "repository": {
