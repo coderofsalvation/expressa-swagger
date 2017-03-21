@@ -1,6 +1,6 @@
 {
   "name": "expressa-swagger",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Beautifully generated documentation for Expressa using swagger + markdown",
   "main": "index.js",
   "directories": {
