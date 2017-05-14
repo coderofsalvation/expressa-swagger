@@ -1,4 +1,4 @@
-Beautifully generated documentation + restclients for Express+Expressa using swagger + markdown 
+Beautifully generated documentation + restclients for Express + [Expressa](https://npmjs.org/package/expressa) using swagger + markdown 
 
 ![](https://github.com/coderofsalvation/expressa-swagger/raw/master/expressa.png)
 
@@ -35,6 +35,35 @@ Then add this snippet to your expressa application:
 Grab REST-clients for almost __any__ language using [swagger-codegen](http://swagger.io/swagger-codegen).
 
 > NOTE: For the browser & nodejs, the recommended REST-client is [expressa-restclient](https://npmjs.org/package/expressa-restclient]
+
+## Adhoc endpoint documentation
+
+Anywhere in your expressa-app, you can add documentation for endpoints like so:
+
+    expressa.swagger.addEndpoint("get", "my/custom/endpoint",{
+      "parameters": [
+        {
+          "in": "body",
+          "name": "payload",
+          "description": "", 
+          "required": true,
+          "schema": {
+            "type": "object",
+            "required":["id_user"],                  // see swagger
+            "properties": {                          // documentation
+              "id_user":{
+                "required":true, 
+                "type":"string",
+                "default":"lLK34LK" 
+              }
+            }
+          }
+        }    
+      ],
+      "responses": { },
+      "tags": [ "users" ],
+      "summary": "Lorem ipsum"
+    })
 
 ## Todo 
 
