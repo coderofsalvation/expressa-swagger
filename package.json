@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/coderofsalvation/expressa-swagger#readme",
   "dependencies": {
-    "swagger-ui": "^2.2.8"
+    "swagger-ui": "^3.25.5"
   }
 }
